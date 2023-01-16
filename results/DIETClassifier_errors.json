@@ -1,0 +1,57 @@
+[
+  {
+    "text": "tempat makan yang murah yang mana ?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "restaurant",
+        "entity": "object_type"
+      },
+      {
+        "start": 18,
+        "end": 23,
+        "value": "price-range",
+        "entity": "attribute"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "object_type",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.999441921710968,
+        "value": "restaurant",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "price-range",
+        "start": 18,
+        "end": 23,
+        "confidence_entity": 0.7112906575202942,
+        "value": "price-range",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "restaurant",
+        "start": 0,
+        "end": 12,
+        "value": "tempat makan",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "price-range",
+        "start": 18,
+        "end": 23,
+        "value": "murah",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  }
+]

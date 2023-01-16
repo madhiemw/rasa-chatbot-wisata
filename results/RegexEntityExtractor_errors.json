@@ -1,0 +1,472 @@
+[
+  {
+    "text": "info tempat makan murah dong ?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 17,
+        "value": "restaurant",
+        "entity": "object_type"
+      },
+      {
+        "start": 18,
+        "end": 23,
+        "value": "murah",
+        "entity": "price-range"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "object_type",
+        "start": 5,
+        "end": 17,
+        "confidence_entity": 0.9995830655097961,
+        "value": "restaurant",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "price-range",
+        "start": 18,
+        "end": 23,
+        "confidence_entity": 0.8838673233985901,
+        "value": "price-range",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "restaurant",
+        "start": 5,
+        "end": 17,
+        "value": "tempat makan",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "price-range",
+        "start": 18,
+        "end": 23,
+        "value": "murah",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "rekomendasi tempat makan  murah dong ?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 24,
+        "value": "restaurant",
+        "entity": "object_type"
+      },
+      {
+        "start": 26,
+        "end": 31,
+        "value": "murah",
+        "entity": "price-range"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "object_type",
+        "start": 12,
+        "end": 24,
+        "confidence_entity": 0.9995700716972351,
+        "value": "restaurant",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "price-range",
+        "start": 26,
+        "end": 31,
+        "confidence_entity": 0.8830093145370483,
+        "value": "price-range",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "restaurant",
+        "start": 12,
+        "end": 24,
+        "value": "tempat makan",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "price-range",
+        "start": 26,
+        "end": 31,
+        "value": "murah",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "rekomendasi tempat makan di sekitar sini",
+    "entities": [
+      {
+        "start": 12,
+        "end": 24,
+        "value": "restaurant",
+        "entity": "object_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "object_type",
+        "start": 12,
+        "end": 24,
+        "confidence_entity": 0.9995915293693542,
+        "value": "restaurant",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "restaurant",
+        "start": 12,
+        "end": 24,
+        "value": "tempat makan",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "harga sekali makan di KFC berapaan ?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "price-range",
+        "entity": "attribute"
+      },
+      {
+        "start": 22,
+        "end": 25,
+        "value": "KFC",
+        "entity": "restaurant"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "attribute",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9988986253738403,
+        "value": "price-range",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "restaurant",
+        "start": 22,
+        "end": 25,
+        "confidence_entity": 0.9991034865379333,
+        "value": "KFC",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant",
+        "start": 22,
+        "end": 25,
+        "value": "KFC",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "price-range",
+        "start": 0,
+        "end": 5,
+        "value": "harga",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "price-range",
+        "start": 26,
+        "end": 34,
+        "value": "berapaan",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "harga sekali makan di pecel pak kaji berapaan ?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "price-range",
+        "entity": "attribute"
+      },
+      {
+        "start": 22,
+        "end": 36,
+        "value": "pecel pak kaji",
+        "entity": "restaurant"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "attribute",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9989596605300903,
+        "value": "price-range",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "restaurant",
+        "start": 22,
+        "end": 36,
+        "confidence_entity": 0.9984027743339539,
+        "value": "pecel pak kaji",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant",
+        "start": 22,
+        "end": 36,
+        "value": "pecel pak kaji",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "price-range",
+        "start": 0,
+        "end": 5,
+        "value": "harga",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "price-range",
+        "start": 37,
+        "end": 45,
+        "value": "berapaan",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "tempat makan  yang punya masakan sunda  apa ya ?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "restaurant",
+        "entity": "object_type"
+      },
+      {
+        "start": 33,
+        "end": 38,
+        "value": "sunda",
+        "entity": "cuisine"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "object_type",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.9994563460350037,
+        "value": "restaurant",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "cuisine",
+        "start": 33,
+        "end": 38,
+        "confidence_entity": 0.9995774626731873,
+        "value": "sunda",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant",
+        "start": 0,
+        "end": 12,
+        "value": "tempat makan",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "cuisine",
+        "start": 33,
+        "end": 38,
+        "value": "sunda",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "tempat makan  yang punya masakan jawa  apa ya ?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "restaurant",
+        "entity": "object_type"
+      },
+      {
+        "start": 33,
+        "end": 37,
+        "value": "jawa",
+        "entity": "cuisine"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "object_type",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.999454915523529,
+        "value": "restaurant",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "cuisine",
+        "start": 33,
+        "end": 37,
+        "confidence_entity": 0.999239444732666,
+        "value": "jawa",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant",
+        "start": 0,
+        "end": 12,
+        "value": "tempat makan",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "cuisine",
+        "start": 33,
+        "end": 37,
+        "value": "jawa",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "tempat makan yang ready masakan sunda yang mana ?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "restaurant",
+        "entity": "object_type"
+      },
+      {
+        "start": 32,
+        "end": 37,
+        "value": "sunda",
+        "entity": "cuisine"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "object_type",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.9994496703147888,
+        "value": "restaurant",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "cuisine",
+        "start": 32,
+        "end": 37,
+        "confidence_entity": 0.9995759129524231,
+        "value": "sunda",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant",
+        "start": 0,
+        "end": 12,
+        "value": "tempat makan",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "cuisine",
+        "start": 32,
+        "end": 37,
+        "value": "sunda",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "tempat makan yang murah yang mana ?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "restaurant",
+        "entity": "object_type"
+      },
+      {
+        "start": 18,
+        "end": 23,
+        "value": "price-range",
+        "entity": "attribute"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "object_type",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.999441921710968,
+        "value": "restaurant",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "price-range",
+        "start": 18,
+        "end": 23,
+        "confidence_entity": 0.7112906575202942,
+        "value": "price-range",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "restaurant",
+        "start": 0,
+        "end": 12,
+        "value": "tempat makan",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "price-range",
+        "start": 18,
+        "end": 23,
+        "value": "murah",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  }
+]

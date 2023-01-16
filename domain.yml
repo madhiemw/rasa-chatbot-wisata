@@ -1,0 +1,109 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - query_knowledge_base
+  - menanyakan_wisata_spesifik_sejarah
+  - menanyakan_transport_destinasi
+  - menanyakan_tempat_yang_pernah_di_kunjungi
+  - tanya_wisata_bersejarah
+entities:
+  - object_type
+  - mention
+  - attribute
+  - restaurant
+  - wisata
+  - penjelasan
+  - lokasi 
+  - jenis
+  - posisi
+  - harga
+
+slots:
+  object_type:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: object_type
+  mention:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: mention
+  attribute:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: attribute
+  wisata:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: wisata
+  penjelasan:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: penjelasan
+  lokasi:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: lokasi
+  jenis:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: jenis
+  posisi:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: posisi
+  harga:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: posisi
+
+actions:
+- action_query_knowledge_base
+- action_find_history
+- action_find_history_date
+
+responses:
+  utter_greet:
+  - text: "hi, ada yang bisa aku bantu"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Goodbye. See you soon."
+
+  utter_menanyakan_transport_destinasi:
+  - text: "destinasi ini bisa kamu akses dengan menggunakan tranportasi umum BRT trans jawa ataupun ojek/taxi online"
+ 
+  utter_menanyakan_wisata_spesifik_sejarah: 
+  - text: "iya, destinasi ini termasuk destinasi wisata yang memiliki background sejarah" 
+
+  utter_ask_rephrase:
+  - text: "aku ngga paham sama pertanyaan mu, Hubungi mekanik saya untuk informasi lebih lanjut :)"
+
+  utter_iamabot:
+  - text: "aku robot buatan mahasiswa UDINUS Semarang"
+  
+  wisata_bersejarah :
+  - text: "berikut wisata bersejarah di semarang : kota lama, lawang sewu, museum kota lama, tugu muda dan masih banyak lagi"
+
+session_config:
+  session_expiration_time: 60  # value in minutes
+  carry_over_slots_to_new_session: true

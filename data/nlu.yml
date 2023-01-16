@@ -1,0 +1,92 @@
+version: "3.1"
+nlu:
+  - intent: bot_challenge
+    examples: |
+      - kamu ini apa ?
+      - kamu siapa ?
+      - kamu robot buatan siapa ?
+      - kamu manusia bukan ? 
+  
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - selamat pagi
+      - selamat siang
+      - selamat sore
+      - selamat malam
+      - selamat malem
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you around
+      - see you later
+
+  - intent: query_knowledge_base
+    examples: |
+      - info [wisata]{"entity":"object_type", "value": "wisata"} di sekitar sini 
+      - info [wisata]{"entity":"object_type", "value": "wisata"} terdekat
+      - tunjukan [wisata] {"entity":"object_type", "value": "wisata"} di dekat sini
+      - rekomendasi [wisata]{"entity":"object_type", "value": "wisata"} di sekitar sini
+      - tunjukan [destinasi]{"entity":"object_type", "value": "wisata"} terdekat
+      - destinasi [wisata]{"entity":"object_type", "value": "wisata"} sekitar sini
+      - rekomendasi [wisata]{"entity":"object_type", "value": "wisata"} di semarang
+      - info [wisata]{"entity":"object_type", "value": "wisata"} di semarang
+
+  - intent: tanya_history_tempat_date
+    examples: |
+      - history kunjungan saya ke tempat wisata
+      - saya kemarin ke tempat wisata apa 
+      - tampilkan riwayat kunjungan ke tempat wisata
+      - saya kemarin ke tempat wisata apa 
+      - kemarin saya ke tempat apa
+  - intent: tanya_wisata_bersejarah
+    examples: |
+      - info wisata bersejarah di semarang
+      - apa saja wisata bersejarah di semarang 
+      - tunjukan wisata bersejarah di semarang
+  
+  - intent: menanyakan_wisata_spesifik_sejarah 
+    examples: |
+      - apakah lawang sewu termasuk wisata bersejarah 
+      - apakah tugu muda termasuk wisata bersejarah
+      - apakah museum kota lamatermasuk destinasi wisata bersejarah
+      - apakah Museum Perjuangan Mandala Bhakti termasuk destinasi bersejarah
+      - apakah sam po kong memiliki sejarah
+      - apakah sampokong termasuk wisata bersejarah
+      - apakah kota kota lama memiliki sejarah
+
+  - intent: menanyakan_tempat_yang_pernah_di_kunjungi
+    examples: |
+      - berapa tempat yang sudah pernah saya kunjungi 
+      - saya sudah pernah kemana saja 
+      - tempat apa saja yang pernah saya kunjungi
+      - tempat yang sudah pernah saya kunjungi 
+      - destinasi apa saja yang sudah pernah saya datangi 
+      - wisata yang pernah saya kunjungi 
+
+  - intent: menanyakan_transport_destinasi
+    examples: |
+      - cara tercepat menuju lawang sewu adalah
+      - transportasi tercepat menuju lawang sewu adalah
+      - transportasi tercepat menuju lawang sewu adalah 
+      - cara tercepat menuju ke kota lama 
+      - naik apa untuk menuju kota lama
+      - naik apa untuk menuju pantai marina
+
+  - lookup: object_type
+    examples: |
+      - tempat
+      - tempat wisata
+      - wisata 
+      - destinasi
+
+
+  - lookup: jenis |
+    examples: |
+      - bersejarah
+      - pantai 
+

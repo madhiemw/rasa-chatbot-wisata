@@ -1,0 +1,50 @@
+version: "3.1"
+rules:
+  - rule: greet
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: query knowledge base
+    steps:
+      - intent: query_knowledge_base
+      - action: action_query_knowledge_base
+
+  - rule: bot challenge
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - rule: bot_challange
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - rule: bertanya_akses_ke_lokasi 
+    steps: 
+      - intent: menanyakan_transport_destinasi
+      - action: utter_menanyakan_transport_destinasi
+
+  - rule: menanyakan_wisata_spesifik_sejarah
+    steps:
+      - intent: menanyakan_wisata_spesifik_sejarah
+      - action: utter_menanyakan_wisata_spesifik_sejarah
+
+  - rule: history_lokasi
+    steps: 
+      - intent: menanyakan_tempat_yang_pernah_di_kunjungi
+      - action: action_find_history
+
+  - rule: history_lokasi_date 
+    steps:
+      - intent: tanya_history_tempat_date
+      - action: action_find_history_date
+  - rule: tanya_sejarah
+    steps:
+      - intent: tanya_wisata_bersejarah
+      - action: wisata_bersejarah
