@@ -32,9 +32,3 @@ To chat with the bot on the command line, run
 ```
 rasa shell
 ```
-
-For more information about the individual commands, please check out our
-[documentation](http://rasa.com/docs/rasa/command-line-interface).
-
-## Encountered any issues?
-Let us know about it by posting on [Rasa Community Forum](https://forum.rasa.com)!
